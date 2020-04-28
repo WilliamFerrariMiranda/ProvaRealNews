@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<!--bootstrap.css-->
+<link rel="stylesheet" href="css/bootstrap.css" />
+
+<!--estilo.css-->
+<link rel="stylesheet" href="css/estilo.css" />
+
+<title>Adicionar Noticia</title>
+</head>
+<body>
+	
+	<div id="voltar" class="vertical-menu">
+	  <a href="index.html" class="active">Voltar</a>
+	</div>
+
+	<h2>Adicionar Notícia</h2>
+
+	<form method="POST" action="addNoticia.do">
+	  <div class="form-group">
+	    <label for="tituloNoticia">Título Notícia</label>
+	    <input type="text" id="tituloNoticia" name="titulo" class="form-control">
+	  </div>
+	  <div class="form-group">
+	    <label for="descricaoNoticia">Descrição Notícia</label>
+	    <input type="text" id="descricaoNoticia" name="descricao" class="form-control">
+	  </div>
+	  <div class="form-group">
+	    <label for="textoNoticia">Texto Notícia</label>
+	    <textarea id="textoNoticia" name="texto" rows="3"></textarea>
+	  </div>
+	  <div class="form-button">
+		<input id="addNoticia" type="submit" value="Adicionar Notícia" />
+	  </div>
+	</form>
+	
+</body>
+</html>
